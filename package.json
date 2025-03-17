@@ -9,6 +9,9 @@
         "start": "pm2 start . --attach --name rudhra",
         "stop": "pm2 stop rudhra"
   },
+    "engines": {
+        "node": ">=18.0.0 <=22.x"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rudhachu/rudh.git"
@@ -30,7 +33,7 @@
     "acrcloud": "^1.4.0",
     "axios": "^1.6.0",
     "bitly": "^7.1.2",
-    "browser-id3-writer": "^6.2.0",
+    "browser-id3-writer": "^5.0.0",
     "chatgpt": "^5.2.5",
     "cheerio": "^1.0.0-rc.12",
     "crypto-js": "^4.2.0",
