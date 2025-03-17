@@ -1,21 +1,22 @@
 services:
   - type: web
     name: rudhra-bot
-    env: node
-    branch: main
     repo: https://github.com/rudhachu/rdtest.git
-    buildCommand: npm install
-    startCommand: npm start
+    branch: main
+    env: docker
+    dockerfilePath: Dockerfile
     plan: free
-    autoDeploy: false
+    autoDeploy: true
     envVars:
       - key: SESSION_ID
         sync: false
-      - key: MODE
-        value: private
-      - key: SERVER
-        value: render
-      - key: CAPTION
-        value: RUDHRA
+        required: true
+      - key: DATABASE_URL
+        sync: false
+        required: true
       - key: SUDO
         value: 919895809960
+        required: true
+      - key: MODE
+        value: private
+        required: true
