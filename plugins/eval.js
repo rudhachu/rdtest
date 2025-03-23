@@ -31,6 +31,7 @@ const {
 	sudoIds,
 	postJson,
 	Imgbb,
+	linkPreview,
 	getUrl,
 	igdl,
 	uploadToServer
