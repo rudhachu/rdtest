@@ -21,6 +21,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 module.exports = {
   BRANCH: "main",
   ADMIN_ACCESS: toBool(process.env.ADMIN_ACCESS) || false,
+  ALLWAYS_ONLINE: toBool(process.env.ALLWAYS_ONLINE) || false,
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
   ANTILINK: toBool(process.env.ANTI_LINK) || true,
   AUTHOR: process.env.AUTHOR || "Ƥ ʀ ɪ ɴ ᴄ ᴇ  Ʀ ᴜ ᴅ ʜ",
