@@ -20,7 +20,7 @@ const config = require("../config");
     const start = new Date().getTime();
     
     // Send the initial "Pinging..." message
-    let pingMsg = await client.sendMessage(message.jid, { text: 'Pinging...' }, { quoted: vcardMessage });
+    let pingMsg = await client.sendMessage(message.jid, { text: 'Wait...' }, { quoted: vcardMessage });
 
     const end = new Date().getTime();
     const ms = end - start;
