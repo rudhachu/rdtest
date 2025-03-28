@@ -6,12 +6,12 @@
   "type": "commonjs",
   "scripts": {
     "postinstall": "node -e \"try { require('sharp') } catch (e) { process.exit(1); }\" || yarn add --ignore-engines sharp@0.33.5",
-        "start": "pm2 start . --attach --name rudhra",
-        "stop": "pm2 stop rudhra"
+    "start": "pm2 start . --attach --name rudhra",
+    "stop": "pm2 stop rudhra"
   },
-    "engines": {
-        "node": ">=18.0.0 <=22.x"
-    },
+  "engines": {
+    "node": ">=18.0.0 <=22.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rudhachu/rudh.git"
@@ -62,8 +62,8 @@
     "node-fetch": "^2.7.0",
     "node-koyeb-api": "^1.0.7",
     "node-webpmux": "^3.2.0",
-    "pastebin-js": "^1.0.6",
     "pastebin-api": "^7.0.0",
+    "pastebin-js": "^1.0.6",
     "pg": "^8.12.0",
     "pino": "^9.6.0",
     "pm2": "^6.0.5",
