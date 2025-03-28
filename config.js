@@ -31,7 +31,7 @@ module.exports = {
   DELETED_LOG_CHAT: process.env.DELETED_LOG_CHAT || false,
   DISABLE_PM: toBool(process.env.DISABLE_PM) || false,
   ERROR_MSG: toBool(process.env.ERROR_MSG) || true,
-  HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
+  PREFIX: (process.env.PREFIX || '^[.,!]').trim(),
   LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
   LINK_PREVIEW: process.env.LINK_PREVIEW || "RUDHRA-BOT;Ƥ ʀ ɪ ɴ ᴄ ᴇ  Ʀ ᴜ ᴅ ʜ;https://raw.githubusercontent.com/rudhraan/media/main/image/rudhra2.jpg", // You can use "false" also
   LOG_MSG: toBool(process.env.LOG_MSG) || true,
